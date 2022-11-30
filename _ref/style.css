@@ -569,31 +569,21 @@ div[column]>div {
         font-size: 14px;
     }
 
-    header {
-        height: 4rem;
-    }
-
     header>img {
         /* 大きさの設定 */
         height: 3rem;
         margin: auto 0.5rem;
-        /* 選択禁止設定 */
-        user-select: none;
     }
 
     header>p {
         /* 大きさの設定 */
         margin: auto 0.5rem;
         font-size: 1.5rem;
-        color: hsl(var(--base), 93.75%);
-        font-family: 'Ubuntu', sans-serif;
-        /* 選択禁止設定 */
-        user-select: none;
     }
 
     main {
         flex-direction: column;
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     main>article,
