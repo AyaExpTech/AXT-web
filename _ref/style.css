@@ -18,8 +18,8 @@
     /* 基準色設定(HSL) */
     --base: 240, 50%;
     /* グラスモーフィズムの設定 */
-    --blur: 8px;
-    --alpha: 0.2;
+    --blur: 0px;
+    --alpha: 0.4;
 }
 
 /*==============================================================
@@ -112,12 +112,12 @@ main>article {
     /* 余白の設定 */
     margin: 1rem 0.5rem;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.175);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, var(--alpha));
+    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, 0.4);
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -128,12 +128,12 @@ main>div.sidebar {
     /* 余白の設定 */
     margin: 1rem 0.5rem;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.175);
+    background-color: hsla(var(--base), 100%, 0var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, var(--alpha));
+    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, 0.4);
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -151,12 +151,12 @@ main>article>h1 {
     /* beforeで作る左枠のために基準positionになれるようにする */
     position: relative;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.175);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, var(--alpha));
+    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, 0.4);
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -184,12 +184,12 @@ main>article>h1::before {
     /* beforeで作る左枠のために基準positionになれるようにする */
     position: relative;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.175);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, var(--alpha));
+    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, 0.4);
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -203,12 +203,12 @@ main>article>h1::before {
     /* beforeで作る左枠のために基準positionになれるようにする */
     position: relative;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.175);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, var(--alpha));
+    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, 0.4);
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -226,12 +226,12 @@ main>article>h1::before {
     /* beforeで作る左枠のために基準positionになれるようにする */
     position: relative;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.1);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, var(--alpha));
+    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, 0.4);
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -255,12 +255,12 @@ main>article>h1::before {
     /* before用指定 */
     position: relative;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.175);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.1rem 0.1rem 0.4rem hsla(var(--base), 0%, calc(var(--alpha) / 2));
+    box-shadow: 0.1rem 0.1rem 0.4rem hsla(var(--base), 0%, 0.2);
     border-radius: 0.5rem;
     min-height: 1rem;
     max-height: 33vh;
@@ -270,19 +270,19 @@ main>article>h1::before {
     /* 大きさ設定 */
     width: 100%;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.175);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.1rem 0.1rem 0.4rem hsla(var(--base), 0%, calc(var(--alpha) / 2));
+    box-shadow: 0.1rem 0.1rem 0.4rem hsla(var(--base), 0%, 0.2);
     border-radius: 0.5rem;
     min-height: 1rem;
 }
 
 :is(section#lead, section.noHead, main>article section, main>div.sidebar>section):is(:has(h2), #lead, .noHead) table th,
 :is(section#lead, section.noHead, main>article section, main>div.sidebar>section):is(:has(h2), #lead, .noHead) table td {
-    background-color: hsla(var(--base), 100%, 0.175);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border-radius: 0.5rem;
     padding: 0.1rem;
     text-align: center;
@@ -326,12 +326,12 @@ main>article>h1::before {
     /* beforeで作る左枠のために基準positionになれるようにする */
     position: relative;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.1);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, var(--alpha));
+    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, 0.4);
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -356,12 +356,12 @@ main>article>h1::before {
     /* beforeで作る左枠のために基準positionになれるようにする */
     position: relative;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.1);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, var(--alpha));
+    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, 0.4);
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -482,12 +482,12 @@ main>article>h1::before {
     /* 文字色設定 */
     color: hsl(var(--base), 90%);
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 0%, 0.7);
+    background-color: hsla(var(--base), 0%, 0.75);
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, var(--alpha));
+    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, 0.4);
     border-radius: 0.5rem;
     min-height: 1rem;
     /* 右端に到達したら容赦なく折り返す */
@@ -552,12 +552,12 @@ div[column]>div {
 
 :is(section#lead, section.noHead, main>article section, main>div.sidebar>section):is(:has(h2), #lead, .noHead) :is([glass], .glass) {
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0.1);
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, var(--alpha));
+    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, 0.4);
     border-radius: 0.5rem;
     min-height: 1rem;
 }
