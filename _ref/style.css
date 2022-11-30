@@ -569,6 +569,10 @@ div[column]>div {
         font-size: 14px;
     }
 
+    header {
+        height: 4rem;
+    }
+
     header>img {
         /* 大きさの設定 */
         height: 3rem;
