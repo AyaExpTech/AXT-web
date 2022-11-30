@@ -39,6 +39,31 @@ var bgSlide = (img, interval, fade, zIndex, style) => {
 }
 
 /**
+ * bgRandom(img, zIndex)
+ * >>> webページのbody直下に指定した画像を順番に表示する背景要素を追加します。
+ * @param {Array} img - 画像名一覧の配列
+ * @param {Number} zIndex - 背景画像を置くz-index(-10くらいを推奨)
+ * @return {Undefined}
+ */
+var bgRandom = (img, zIndex) => {
+    var uniqueID = `bgRandom`;
+    /* すでに挿入済みのタグがある場合、それを削除する */
+    if (document.getElementById(`${uniqueID}`) instanceof Element) {
+        document.getElementById(`${uniqueID}`).remove();
+    }
+    if (document.getElementById(`${uniqueID}-style`) instanceof Element) {
+        document.getElementById(`${uniqueID}-style`).remove();
+    }
+    /* 配列imgから挿入する画像を決定する */
+    var insertImg = img[Math.floor(Math.random() * img.length)];
+    /* body直下の最初に必要分のHTMLを入れる */
+    var insertHTML = `<div id="${uniqueID}" style="width:100%;height:100%;position:fixed;z-index:${zIndex};">`;
+    insertHTML += `<img src="${insertImg}" loading="lazy" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.33);">`;
+    insertHTML += `</div>`;
+    document.body.innerHTML = insertHTML + document.body.innerHTML;
+}
+
+/**
  * getSidebar
  * >>> sidebar.htmlのGETリクエストを送ります
  * @param {String} source - sidebar.htmlのソース
@@ -74,7 +99,8 @@ var insertHTML = (selector, body) => {
  */
 window.onload = () => {
     var img = ["_bg/1.jpg", "_bg/2.jpg", "_bg/3.jpg", "_bg/4.jpg"];
-    bgSlide(img, 6, 0.6, -1, `filter: brightness(0.33);`);
+    // bgSlide(img, 6, 0.6, -1, `filter: brightness(0.33);`);
+    bgRandom(img, -1);
     getSidebar("_ref/sidebar.html");
     mediumZoom(document.querySelectorAll('article img:not(:where(a img))'), {
         margin: 40,
