@@ -128,7 +128,7 @@ main>div.sidebar {
     /* 余白の設定 */
     margin: 1rem 0.5rem;
     /* グラスモーフィズム */
-    background-color: hsla(var(--base), 100%, 0var(--alpha));
+    background-color: hsla(var(--base), 100%, var(--alpha));
     border: 1px solid hsla(var(--base), 100%, 0.4);
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
