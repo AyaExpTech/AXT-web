@@ -17,7 +17,9 @@
     --bold: 500;
     /* 基準色設定(HSL) */
     --base: 240, 50%;
+    /* グラスモーフィズムの設定 */
     --blur: 8px;
+    --alpha: 0.2;
 }
 
 /*==============================================================
@@ -115,7 +117,7 @@ main>article {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, 0.4);
+    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, var(--alpha));
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -131,7 +133,7 @@ main>div.sidebar {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, 0.4);
+    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, var(--alpha));
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -154,7 +156,7 @@ main>article>h1 {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, 0.4);
+    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, var(--alpha));
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -187,7 +189,7 @@ main>article>h1::before {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, 0.4);
+    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, var(--alpha));
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -206,7 +208,7 @@ main>article>h1::before {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, 0.4);
+    box-shadow: 0.25rem 0.25rem 1.5rem hsla(var(--base), 0%, var(--alpha));
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -229,7 +231,7 @@ main>article>h1::before {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, 0.4);
+    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, var(--alpha));
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -258,7 +260,7 @@ main>article>h1::before {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.1rem 0.1rem 0.4rem hsla(var(--base), 0%, 0.2);
+    box-shadow: 0.1rem 0.1rem 0.4rem hsla(var(--base), 0%, calc(var(--alpha) / 2));
     border-radius: 0.5rem;
     min-height: 1rem;
     max-height: 33vh;
@@ -273,7 +275,7 @@ main>article>h1::before {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.1rem 0.1rem 0.4rem hsla(var(--base), 0%, 0.2);
+    box-shadow: 0.1rem 0.1rem 0.4rem hsla(var(--base), 0%, calc(var(--alpha) / 2));
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -329,7 +331,7 @@ main>article>h1::before {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, 0.4);
+    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, var(--alpha));
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -359,7 +361,7 @@ main>article>h1::before {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, 0.4);
+    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, var(--alpha));
     border-radius: 0.5rem;
     min-height: 1rem;
 }
@@ -485,7 +487,7 @@ main>article>h1::before {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, 0.4);
+    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, var(--alpha));
     border-radius: 0.5rem;
     min-height: 1rem;
     /* 右端に到達したら容赦なく折り返す */
@@ -555,7 +557,7 @@ div[column]>div {
     border-right-color: hsla(var(--base), 100%, 0.2);
     border-bottom-color: hsla(var(--base), 100%, 0.2);
     backdrop-filter: blur(var(--blur));
-    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, 0.4);
+    box-shadow: 0.25rem 0.25rem 1rem hsla(var(--base), 0%, var(--alpha));
     border-radius: 0.5rem;
     min-height: 1rem;
 }
