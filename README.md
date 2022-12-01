@@ -32,3 +32,7 @@ https://axtech.dev/
     index.html ---------------------------------- 技研webのTOP
 ```
 
+## 利用規約
+
+Author : AyaExpTech
+Licensed by "AeTOS(Type-04暫定)"
