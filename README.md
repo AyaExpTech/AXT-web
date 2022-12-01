@@ -38,4 +38,3 @@ Author : AyaExpTech
 Licensed by "AeTOS(Type-04暫定)"
 
 ![AeTOS(Type-04) Author:AyaExpTech](https://user-images.githubusercontent.com/100068967/204968925-f8322b9b-55e0-43c0-97ff-ed01cf68d43b.png)
-
