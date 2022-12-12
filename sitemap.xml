@@ -13,14 +13,14 @@
     </url>
     <!-- 綾急技研とは？ -->
     <url>
-        <loc>https://axtech.dev/introduction/</loc>
+        <loc>https://axtech.dev/introduction/index.html</loc>
         <priority>0.9</priority>
         <lastmod>2022-11-30T13:00:00+09:00</lastmod>
         <changefreq>always</changefreq>
     </url>
     <!-- メンバー紹介 -->
     <url>
-        <loc>https://axtech.dev/member/</loc>
+        <loc>https://axtech.dev/member/index.html</loc>
         <priority>0.9</priority>
         <lastmod>2022-11-30T13:00:00+09:00</lastmod>
         <changefreq>always</changefreq>
@@ -41,21 +41,21 @@
     </url>
     <!-- すべての記事 -->
     <url>
-        <loc>https://axtech.dev/article/</loc>
+        <loc>https://axtech.dev/article/index.html</loc>
         <priority>0.9</priority>
         <lastmod>2022-11-30T13:00:00+09:00</lastmod>
         <changefreq>always</changefreq>
     </url>
     <!-- AeTOS -->
     <url>
-        <loc>https://axtech.dev/license/</loc>
+        <loc>https://axtech.dev/license/index.html</loc>
         <priority>0.9</priority>
         <lastmod>2022-11-30T13:00:00+09:00</lastmod>
         <changefreq>always</changefreq>
     </url>
     <!-- お問い合わせ -->
     <url>
-        <loc>https://axtech.dev/contact/</loc>
+        <loc>https://axtech.dev/contact/index.html</loc>
         <priority>0.9</priority>
         <lastmod>2022-11-30T13:00:00+09:00</lastmod>
         <changefreq>always</changefreq>
