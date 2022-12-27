@@ -257,6 +257,7 @@ main>article>h1::before {
 
 :is(section#lead, section.noHead, main>article section, main>div.sidebar>section):is(:has(h2), #lead, .noHead) p {
     padding: 0.25rem;
+    margin: 0;
 }
 
 :is(section#lead, section.noHead, main>article section, main>div.sidebar>section):is(:has(h2), #lead, .noHead) img {
